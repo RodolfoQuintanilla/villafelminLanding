@@ -14,31 +14,272 @@
 
 body {
    font-family: 'Rubik', sans-serif;
-   font-size: 1.5rem;
+   font-size: 1rem;
 
 }
 
 .header {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-   background-color: white;
    overflow: hidden;
+   background-color: rgb(255, 255, 255);
    position: fixed;
    top: 0;
    width: 100%;
+   height: auto;
    padding: 10px;
-   color: var(--color-logo);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   z-index: 1;
+}
+
+.header__img {
+   width: 170px;
+   height: 50px;
 }
 
 .header__items {
    display: flex;
-   flex-wrap: wrap;
    gap: 15px;
    height: 100%;
 }
 
+.header__logo {
+   height: 40px;
+}
+
+.header__tel {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.headre__circulo {
+   width: 50px;
+   height: 50px;
+   background-color: rgba(197, 197, 197, 0.154);
+   border-radius: 50%;
+   text-align: center;
+   line-height: 50px;
+   cursor: pointer;
+}
+
+i {
+   color: var(--color-logo)
+}
+
+.header__textos a {
+   text-decoration: none;
+   color: var(--color-uno)
+}
 
 .nav {
-   margin-top: 6%;
+   background-color: var(--color-dos);
+   height: 70px;
+   width: 90%;
+   border-radius: 18px;
+   text-align: center;
+   line-height: 60px;
+   margin-top: 70px;
+   margin-left: 7%;
+   margin-right: 7%;
+}
+
+.nav__button {
+   border: none;
+   background: var(--color-logo);
+   border-radius: 10px;
+   height: 40px;
+   width: 150px;
+   color: white;
+   padding: 10px;
+   font-size: 1rem;
+   border-left: 20px;
+   text-decoration: none;
+}
+
+.nav__button i {
+   color: white;
+}
+
+.nav__button:hover {
+   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
+   transition: .2s;
+}
+
+.nav__button:hover {
+   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
+   transition: .2s;
+}
+
+
+.section {
+   background-color: #00a5e3;
+
+}
+
+.section__img {
+   width: 100%;
+   height: 70vh;
+   object-fit: cover;
+   background-size: cover;
+
+}
+
+.section__textos {
+   width: 100%;
+   height: auto;
+   background-repeat: no-repeat;
+   background-image: url(../img/cofepris.png);
+   background-size: cover;
+   object-fit: cover;
+   position: absolute;
+   top: 40vh;
+   left: 40vw;
+
+}
+
+/* fin de header nav y section */
+
+
+
+
+
+
+.parrafo1 {
+   background-color: #00a5e3;
+   color: white;
+   padding: 25px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   justify-content: center;
+   font-size: 20px;
+   font-size: 1em;
+}
+
+.parrafo1__cards {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin-top: 20px;
+}
+
+.parrafo1__img {
+   width: 40px;
+}
+
+.parrafo1__card {
+   background-color: white;
+   width: 60px;
+   height: 35px;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.video {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: center;
+   gap: 15px;
+}
+
+.video__link {
+
+   padding: 20px;
+   text-align: center;
+   width: 560px;
+}
+
+.video__textos {
+
+   width: 50%;
+   padding: 20px;
+   text-align: center;
+   font-size: 1em;
+   color: var(--color-uno);
+}
+
+.galeria__imags {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(4, 1fr);
+}
+
+
+@media screen and (max-width:688px) {
+   .header {
+      position: fixed;
+      bottom: 92%;
+      height: 70px;
+   }
+
+   .header__img {
+      margin-bottom: 15px;
+   }
+
+   .header__tel:nth-child(2) {
+      display: none;
+   }
+
+   .section__textos {
+
+      position: absolute;
+      bottom: 25vh;
+      left: 20vw;
+   }
+
+   /* fin de header nav y section */
+
+}
+
+@media screen and (max-width: 562px) {
+
+   .header {
+      height: 125px;
+   }
+
+   .nav {
+      margin-top: 120px;
+   }
+
+   .section__textos {
+      height: 200px;
+      width: 350px;
+   }
+
+   .section__textos {
+      position: absolute;
+      bottom: 50vh;
+      left: 150px;
+   }
+
+   /* fin de header nav y section */
+}
+
+/*fin de header nav y section */
+
+
+@media screen and (max-width: 414px) {
+
+   .section__textos {
+      position: absolute;
+      bottom: 50vh;
+      left: 30px;
+   }
+
+   /* fin de header nav y section */
+}
+
+@media screen and (max-width:360px) {
+
+   .header {
+
+      margin-bottom: 150px;
+
+   }
+
+   /* fin de header nav y section */
 }
