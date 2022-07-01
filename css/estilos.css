@@ -15,6 +15,7 @@
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 1.5rem;
+
 }
 
 .header {
@@ -24,14 +25,19 @@ body {
     height: 70px;
     width: 100%;
     color: var(--color-logo);
-    margin-top: 40px;
+    background-color: rgb(190, 33, 33);
 
 }
+
 
 .header__items {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    height: 100%;
+    position: sticky;
+    bottom: 100%;
+    z-index: 1;
 }
 
 .header__tel {
@@ -72,8 +78,6 @@ i {
 
 }
 
-
-
 .nav {
     background-color: var(--color-dos);
     height: 70px;
@@ -81,7 +85,7 @@ i {
     border-radius: 18px;
     text-align: center;
     line-height: 60px;
-    margin-top: 30px;
+    margin-top: 70px;
     margin-left: 7%;
     margin-right: 7%;
 }
@@ -96,6 +100,7 @@ i {
     padding: 10px;
     font-size: 1rem;
     border-left: 20px;
+    text-decoration: none;
 }
 
 .nav__button i {
@@ -109,7 +114,8 @@ i {
 
 
 .section {
-    background-color: var(--color-logo);
+    background-color: #00a5e3;
+
 }
 
 .section__img {
@@ -141,8 +147,8 @@ i {
 
 @media screen and (max-width:688px) {
     .header {
-
-        margin-bottom: 80px;
+        position: fixed;
+        bottom: 92%;
 
     }
 
@@ -227,7 +233,105 @@ i {
 }
 
 .parrafo1 {
-    background-color: var(--color-logo);
+    background-color: #00a5e3;
+    color: white;
     padding: 25px;
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    font-size: 20px;
+    gap: 20px;
 }
+
+.parrafo1__cards {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.parrafo1__img {
+    width: 40px;
+}
+
+.parrafo1__card {
+    background-color: white;
+    width: 60px;
+    height: 35px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.video {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 15px;
+}
+
+.video__link {
+
+    padding: 20px;
+    text-align: center;
+    width: 560px;
+}
+
+.video__textos {
+
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    font-size: .70em;
+    color: var(--color-uno);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal */
+
+.modal-contenido {
+    background-color: aqua;
+    width: 300px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#miModal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#miModal2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/* Fin de Modal */
