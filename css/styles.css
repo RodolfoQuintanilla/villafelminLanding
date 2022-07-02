@@ -79,7 +79,7 @@ i {
    border-radius: 18px;
    text-align: center;
    line-height: 60px;
-   margin-top: 70px;
+   margin-top: 80px;
    margin-left: 7%;
    margin-right: 7%;
 }
@@ -125,13 +125,13 @@ i {
 
 }
 
-.section__textos {
-   width: 100%;
-   height: auto;
-   background-repeat: no-repeat;
+.section__textos img {
+   height: 250px;
+   width: 300px;
+   /*   background-repeat: no-repeat;
    background-image: url(../img/cofepris.png);
-   background-size: cover;
-   object-fit: cover;
+   background-size: cover; */
+
    position: absolute;
    top: 40vh;
    left: 40vw;
@@ -213,7 +213,7 @@ i {
    .header {
       position: fixed;
       bottom: 92%;
-      height: 70px;
+      height: 80px;
    }
 
    .header__img {
@@ -224,11 +224,11 @@ i {
       display: none;
    }
 
-   .section__textos {
+   .section__textos img {
 
       position: absolute;
-      bottom: 25vh;
-      left: 20vw;
+      top: 35%;
+
    }
 
    /* fin de header nav y section */
@@ -238,36 +238,43 @@ i {
 @media screen and (max-width: 562px) {
 
    .header {
-      height: 125px;
+      height: 140px;
    }
 
    .nav {
-      margin-top: 120px;
+      margin-top: 140px;
    }
+
+
 
    .section__textos {
       height: 200px;
       width: 350px;
-   }
-
-   .section__textos {
       position: absolute;
-      bottom: 50vh;
-      left: 150px;
+      top: 40vh;
+      left: -90px;
    }
 
    /* fin de header nav y section */
 }
 
-/*fin de header nav y section */
+@media screen and (max-width: 414px) {
 
+
+   .section__textos {
+      position: absolute;
+      top: 50vh;
+   }
+
+   /* fin de header nav y section */
+}
 
 @media screen and (max-width: 414px) {
 
    .section__textos {
       position: absolute;
-      bottom: 50vh;
-      left: 30px;
+      top: 40%;
+      right: 120px;
    }
 
    /* fin de header nav y section */
