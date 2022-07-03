@@ -199,38 +199,6 @@ i {
 
 
 
-@media screen and (max-width: 414px) {
-
-
-    .section__textos {
-        position: absolute;
-        top: 50vh;
-    }
-
-    /* fin de header nav y section */
-}
-
-@media screen and (max-width: 414px) {
-
-    .section__textos {
-        position: absolute;
-        bottom: 50vh;
-        left: 60px;
-    }
-
-    /* fin de header nav y section */
-}
-
-@media screen and (max-width:360px) {
-
-    .header {
-
-        margin-bottom: 150px;
-
-    }
-
-    /* fin de header nav y section */
-}
 
 .parrafo1 {
     background-color: #00a5e3;

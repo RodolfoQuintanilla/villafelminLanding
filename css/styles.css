@@ -179,6 +179,7 @@ i {
    flex-wrap: wrap-reverse;
    justify-content: center;
    gap: 15px;
+   background-color: rgba(205, 205, 205, 0.275);
 }
 
 .video__link {
@@ -195,6 +196,10 @@ i {
    text-align: center;
    font-size: 1em;
    color: var(--color-uno);
+}
+
+.video__difernte {
+   width: 100%;
 }
 
 .galeria__imags {
@@ -216,6 +221,57 @@ i {
    font-size: cover;
 
 }
+
+/* Modal */
+
+.modal-contenido {
+   background-color: rgba(212, 211, 211, 0.66);
+   width: 300px;
+
+   padding: 10px 20px;
+   margin: 20% auto;
+   margin-top: 50%;
+   position: relative;
+}
+
+.modal {
+   background-color: rgba(0, 0, 0, .8);
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   opacity: 0;
+   pointer-events: none;
+   transition: all 1s;
+}
+
+.modal-cuadro {
+   height: 100%;
+   width: 100%;
+   margin-top: 15px;
+   background: white;
+   background-size: cover;
+   object-fit: cover;
+}
+
+.modal-cuadro img {
+   height: 100%;
+   width: 100%;
+}
+
+#miModal:target {
+   opacity: 1;
+   pointer-events: auto;
+}
+
+#miModal2:target {
+   opacity: 1;
+   pointer-events: auto;
+}
+
+
+/* Fin de Modal */
 
 @media screen and (max-width:688px) {
    .header {
