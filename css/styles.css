@@ -3,7 +3,10 @@
 :root {
    --color-logo: #8bc0cc;
    --color-uno: #828282;
-   --color-dos: rgba(197, 197, 197, 0.154);
+   --color-dos: #c5c5c527;
+
+   --titulos: #444444;
+   --parrafos:
 }
 
 * {
@@ -106,14 +109,11 @@ i {
    transition: .2s;
 }
 
-.nav__button:hover {
-   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
-   transition: .2s;
-}
+
 
 
 .section {
-   background-color: #00a5e3;
+   background-color: var(--color-logo);
 
 }
 
@@ -141,7 +141,7 @@ i {
 /* fin de header nav y section */
 
 .parrafo1 {
-   background-color: #00a5e3;
+   background-color: var(--color-logo);
    color: white;
    padding: 25px;
    display: flex;
@@ -189,6 +189,10 @@ i {
    height: 360px;
 }
 
+.video__textos__titulo {
+   color: var(--titulos)
+}
+
 .video__textos {
 
    width: 50%;
@@ -201,6 +205,41 @@ i {
 .video__difernte {
    width: 100%;
 }
+
+.promostico {
+   padding: 20px;
+}
+
+.promostico__titulo {
+   color: var(--titulos);
+   margin-bottom: 10px;
+}
+
+.promostico p {
+   color: var(--color-uno);
+   margin-bottom: 10px;
+}
+
+.promostico p:nth-child(3) {
+   margin-bottom: 20px;
+}
+
+
+.pronostico__btn {
+   width: 100%;
+   height: 500px;
+   background-color: #8bc0cc;
+   color: white;
+   text-decoration: none;
+   padding: 10px 40px;
+   border-radius: 10px;
+}
+
+.pronostico__btn:hover {
+   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
+   transition: .2s;
+}
+
 
 .galeria__imags {
    display: grid;
@@ -222,12 +261,111 @@ i {
 
 }
 
+.programas {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+
+.programa__img {
+   width: 300px;
+   height: 300px;
+}
+
+.textoUno {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.textoUno__uno {
+   width: 500px;
+   height: 500px;
+
+   object-fit: cover;
+   background-image: url(../img/galeria/actividades3.jpg);
+   background-repeat: no-repeat;
+}
+
+.textosDos__uno__llama {
+   background-color: var(--color-logo);
+   width: 100%;
+   height: 200px;
+   padding: 30px;
+   text-align: center;
+   border-radius: 10px;
+   text-decoration: none;
+   color: white;
+}
+
+.textosDos__uno__llama:hover {
+   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
+   transition: .2s;
+}
+
+.espacio {
+   margin-left: 35px;
+}
+
+
+
+.titulos {
+   color: var(--titulos);
+   font-size: 1.5rem;
+   margin: 10px;
+}
+
+.textoUno__dos {
+   width: 700px;
+   height: 500px;
+   object-fit: cover;
+   background-size: auto;
+   background-repeat: no-repeat;
+
+}
+
+.textosDos {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: space-around;
+}
+
+.textosDos__uno {
+   width: 500px;
+   height: 400px;
+
+   object-fit: cover;
+}
+
+.textosDos__dos {
+   width: 500px;
+   height: 400px;
+
+   background-image: url(../img/textos/actividades4.jpg);
+}
+
+.mapa {
+   width: 100%;
+   height: 400px;
+}
+
+.footer {
+   background-color: var(--color-logo);
+   color: white;
+   font-size: 20px;
+   height: 50px;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+}
+
+
+
 /* Modal */
 
 .modal-contenido {
    background-color: rgba(212, 211, 211, 0.66);
    width: 300px;
-
    padding: 10px 20px;
    margin: 20% auto;
    margin-top: 50%;
@@ -270,6 +408,117 @@ i {
    pointer-events: auto;
 }
 
+button.wh-ap-btn {
+   outline: none;
+   width: 60px;
+   height: 60px;
+   border: 0;
+   background-color: #2ecc71;
+   padding: 0;
+   border-radius: 100%;
+   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+   cursor: pointer;
+   transition: opacity 0.3s, background 0.3s, box-shadow 0.3;
+   z-index: 1;
+}
+
+button.wh-ap-btn::after {
+   content: '';
+   background-image: url('//i.imgur.com/cAS6qqn.png');
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 48%;
+   width: 100%;
+   height: 100%;
+   display: block;
+   opacity: 1;
+}
+
+button.wh-ap-btn:hover {
+   opacity: 1;
+   background-color: #20bf6b;
+   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.wh-api {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+}
+
+.wh-fixed {
+   margin-left: 15px;
+   margin-bottom: 15px;
+}
+
+.wh-fixed>a {
+   display: block;
+   text-decoration: none;
+}
+
+button.wh-ap-btn::before {
+   content: 'Whatsapp';
+   display: block;
+   position: absolute;
+   margin-left: 70;
+   margin-top: 16px;
+   height: 25px;
+   background-color: #333;
+   color: #fff;
+   border-radius: 3px;
+   width: 0;
+   opacity: 0;
+   padding: 0;
+   transition: opacity 0.4s, width 0.4s, padding 0.5s;
+   padding-top: 7px;
+}
+
+.wh-fixed>a:hover button.wh-ap-btn::before {
+   opacity: 1;
+   width: auto;
+   padding-top: 7px;
+   padding-left: 10px;
+   padding-right: 10px;
+   width: 80px;
+}
+
+TML CSS JavaScript .gallery {
+   -webkit-column-count: 3;
+   -moz-column-count: 3;
+   column-count: 3;
+   -webkit-column-width: 33%;
+   -moz-column-width: 33%;
+   column-width: 33%;
+}
+
+.gallery .pics {
+   -webkit-transition: all 350ms ease;
+   transition: all 350ms ease;
+}
+
+.gallery .animation {
+   -webkit-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+}
+
+@media (max-width: 450px) {
+   .gallery {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      -webkit-column-width: 100%;
+      -moz-column-width: 100%;
+      column-width: 100%;
+   }
+}
+
+@media (max-width: 400px) {
+   .btn.filter {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+   }
+}
 
 /* Fin de Modal */
 
@@ -296,6 +545,11 @@ i {
    }
 
    /* fin de header nav y section */
+   .textoUno__uno {
+      width: 100%;
+      height: 350px;
+
+   }
 
 }
 
