@@ -109,12 +109,13 @@ i {
    transition: .2s;
 }
 
-
+.textos__h1 {
+   text-align: center;
+}
 
 
 .section {
-   background-color: var(--color-logo);
-
+   margin-bottom: 0;
 }
 
 .section__img {
@@ -142,6 +143,7 @@ i {
 
 .parrafo1 {
    background-color: var(--color-logo);
+
    color: white;
    padding: 25px;
    display: flex;
@@ -250,7 +252,6 @@ i {
 
 .garleria__titulo {
    text-align: center;
-
 }
 
 .galeria__imags img {
@@ -270,35 +271,63 @@ i {
 .programa__img {
    width: 300px;
    height: 300px;
+   background-size: cover;
+   object-fit: cover;
 }
 
-.textoUno {
+section {
+   margin-top: 10px;
+
+}
+
+.textos {
    display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: space-evenly;
 }
 
-.textoUno__uno {
-   width: 500px;
+.textos__xy {
+   width: 800px;
    height: 500px;
 
-   object-fit: cover;
-   background-image: url(../img/galeria/actividades3.jpg);
-   background-repeat: no-repeat;
 }
 
-.textosDos__uno__llama {
-   background-color: var(--color-logo);
+.textos2 {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   justify-content: space-evenly;
+
+}
+
+.textos__img1 {
+   width: 800px;
+   height: 500px;
+   background-color: rgb(0, 145, 255);
+}
+
+.textos__img1 img {
    width: 100%;
-   height: 200px;
+   height: 100%;
+}
+
+.btn__llama {
+   background-color: var(--color-logo);
+   width: 40%;
+   height: 50px;
    padding: 30px;
    text-align: center;
    border-radius: 10px;
    text-decoration: none;
    color: white;
+
 }
 
-.textosDos__uno__llama:hover {
+.contenedor__btn {
+   margin-top: 5%;
+   text-align: center;
+}
+
+.btn__llama:hover {
    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.142);
    transition: .2s;
 }
@@ -311,9 +340,12 @@ i {
 
 .titulos {
    color: var(--titulos);
-   font-size: 1.5rem;
+   font-size: 1.7rem;
    margin: 10px;
+   text-transform: uppercase;
 }
+
+
 
 .textoUno__dos {
    width: 700px;
@@ -343,6 +375,12 @@ i {
 
    background-image: url(../img/textos/actividades4.jpg);
 }
+
+p img {
+   display: block;
+   margin: auto;
+}
+
 
 .mapa {
    width: 100%;
@@ -482,7 +520,7 @@ button.wh-ap-btn::before {
    width: 80px;
 }
 
-TML CSS JavaScript .gallery {
+.gallery {
    -webkit-column-count: 3;
    -moz-column-count: 3;
    column-count: 3;
